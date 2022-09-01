@@ -1,13 +1,221 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <h1>jfnjsfadsa</h1>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-wrapper">
+          <a href="/" class="logo header-logo">Logo</a>
+          <nav class="header-nav">
+            <ul class="header-nav-list ">
+              <li><a href="/" class="link">Головна</a></li>
+              <li><a href="#about" class="link">Про Нас</a></li>
+              <li><a href="#services" class="link">Послуги</a></li>
+              <li><a href="#gallery" class="link">Галерея</a></li>
+              <li><a href="#contacts" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="header-nav-button" data-menu-button>
+            <svg height="40" width="40">
+              <use href="./images/header-sprite.svg#menu" class="icon-menu"></use>
+              <use href="./images/header-sprite.svg#close" class="icon-cross"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header-menu-container" data-menu>
+          <ul class="header-nav-list-mobile">
+            <li><a href="/" class="link">Головна</a></li>
+            <li><a href="#about" class="link">Про Нас</a></li>
+            <li><a href="#services" class="link">Послуги</a></li>
+            <li><a href="#contacts" class="link">Контакти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="container">
+            <div class="hero-text-container">
+              <h1 class="hero-title">Ми будуемо дім вашої мрії <br> якісно та професійно</h1>
+              <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore asperiores ea excepturi.
+              </p>
+              <a class="hero-button-link button-link" href="">Зв'яжіться з нами</a>
+            </div>
+            <div class="hero-img-container">
+              <img srcset="./images/IMG.jpg 1x, ./images/IMG@2x.jpg 2x, ./images/IMG@3x.jpg 3x" src="./images/IMG.jpg"
+                alt="" sizes="900 690">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-company" id="about">
+        <div class="container">
+          <h2 class="our-company-title text-fourth">Наша компанія</h2>
+          <p class="text-first company-text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui soluta
+            accusamus eum eaque nobis dolorum in, aperiam deleniti. Asperiores veniam quaerat rerum doloribus quasi error,
+            aut velit eos facilis.</p>
+          <p class="company-text-second">Lorem, ipsum dolor.</p>
+          <ul class="our-company-list">
+            <li>
+              <p class="text-third">50+ Кліентів</p>
+            </li>
+            <li>
+              <p class="text-third">30+ Домів</p>
+            </li>
+            <li>
+              <p class="text-third">30+ Домів</p>
+            </li>
+          </ul>
+          <a class="our-company-button-link button-link see-more" href="">Побачити більше</a>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="text-fourth">Наші послуги</h2>
+          <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum ducimus cum!
+          </p>
+          <ul class="services-list">
+            <li>
+              <div class="services-list-container">
+                <svg width="56" height="56" class="icon">
+                  <use href="./images/sprite.svg#icon-pencil"></use>
+                </svg>
+                <h3 class="text-third">Lorem, ipsum dolor.</h3>
+                <p class="text-second">Lorem ipsum dolor sit amet consecte</p>
+              </div>
+            </li>
+            <li>
+              <svg width="56" height="56" class="icon">
+                <use href="./images/sprite.svg#icon-sofa"></use>
+              </svg>
+              <h3 class="text-third">Lorem, ipsum dolor.</h3>
+              <p class="text-second">Lorem ipsum dolor sit amet consectetur adi</p>
+            </li>
+            <li>
+              <svg width="56" height="56" class="icon">
+                <use href="./images/sprite.svg#icon-house"></use>
+              </svg>
+              <h3 class="text-third">Build from scratch</h3>
+              <p class="text-second">We have an contractor for build new building from scratch</p>
+            </li>
+            <li class="services-list-li">
+              <svg width="56" height="56" class="icon">
+                <use href="./images/sprite.svg#icon-construction"></use>
+              </svg>
+              <h3 class="text-third">Lorem ipsum dolor.</h3>
+              <p class="text-second">Lorem ipsum dolor sit amet consectetur</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container">
+          <h2 class="text-fourth benefits-title">Наші переваги</h2>
+          <p class="text-first benefits-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <ul class="benefits-list">
+            <li>
+              <img src="./images/tick.svg" alt="">
+              <h3 class="text-third">Lorem, ipsum dolor.</h3>
+              <p class="text-second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, eveniet!</p>
+            </li>
+            <li>
+              <img src="./images/tick.svg" alt="">
+              <h3 class="text-third">Lorem, ipsum dolor.</h3>
+              <p class="text-second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, eveniet!</p>
+            </li>
+            <li>
+              <img src="./images/tick.svg" alt="">
+              <h3 class="text-third">Lorem, ipsum dolor.</h3>
+              <p class="text-second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, eveniet!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="works" id="gallery">
+        <div class="container">
+          <h2 class="text-fourth">Наші роботи</h2>
+          <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eius?</p>
+          <ul class="works-list">
+            <li class="work-list-item1 item "><img src="./images/works-1.jpg" alt="" class="item-img"></li>
+            <li class="work-list-item2 item"><img src="./images/works-3.jpg" alt="" class="item-img"></li>
+            <li class="work-list-item3 item"><img src="./images/Works-2.jpg" alt="" class="item-img"></li>
+            <li class="work-list-item4 item"><img src="./images/works-4.png" alt="" class="item-img"></li>
+            <li class="not-li"></li>
+            <li class="work-list-item5"><img src="./images/works-5.png" alt="" class="item-img"></li>
+          </ul>
+          <div class="undertitle">
+            <div class="underundertitle">
+              <a class="works-button-link button-link see-more" href="">Побачити більше</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container reviews-container">
+          <div class="reviews-wrapper">
+            <div class="rewiews-block">
+              <h2 class="text-fourth">Що кажуть наші кліенти</h2>
+              <p class="text-first">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="" class="rewiews-button-link button-link see-more">Побачити більше</a>
+            </div>
+            <img src="./images/rewiews-image.jpg" alt="" class="reviews-image">
+          </div>
+          <div class="review-container">
+            <div class="review">
+              <img src="./images/reviewsV1.png" alt="" class="review-img">
+              <p class="review-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, esse fugit alias hic
+                veritatis accusantium asperiores ab, voluptatem temporibus quae distinctio natus, totam unde reiciendis
+                itaque tempore non assumenda eum.</p>
+              <p class="review-end"> - Mr.Robiro</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="container-sub">
+            <h2>Бажаете отримувати свіжі новини?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, consectetur.</p>
+            <form>
+              <input type="email" placeholder="Enter your e-mail here" name="user-email" class="subscribe-input">
+              <button type="submit" class="button">Відправити</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contacts">
+      <div class="container footer-cont">
+        <div class="logo-container">
+          <a href="/" class="logo footer-logo">Logo</a>
+          <ul class="contacts-list">
+            <Li><a href="">+3809488392</a></Li>
+            <Li><a href="">Yakuba Kolasa</a></Li>
+          </ul>
+        </div>
+        <div class="footer-nav-container">
+          <p class="footer-menu">Menu</p>
+          <ul class="footer-nav">
+            <li><a href="/" class="link">Головна</a></li>
+            <li><a href="#about" class="link">Про Нас</a></li>
+            <li><a href="#services" class="link">Послуги</a></li>
+            <li><a href="#gallery" class="link link-gallery">Галерея</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./mobile.menu.js"></script>
   </body>
 </html>
